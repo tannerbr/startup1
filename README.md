@@ -10,7 +10,16 @@ my startup project will be a website that allows people to recommend their favor
 **Websocket Data:** This will be accomplished by giving the live most suggested talk from the list given by the users
 
 ## Images of my startup outline
-![Images from MonkeyMock of my startup outline of the welcome page](https://ninjamock.com/Designer/Workplace/191740910/forgotpassword)
-![Images from MonkeyMock of my startup outline of the suggest page](https://ninjamock.com/Designer/Workplace/191740910/Testimonials)
-![Images from MonkeyMock of my startup outline of the display talk page](https://ninjamock.com/Designer/Workplace/191740910/Testimonials)
+
+### Weclome page
+![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
+
+
+### Suggest Page
+![StartupLoginTemplate](https://github.com/tannerbr/startup1/assets/131897609/96747e86-c452-49e6-8922-d052dcd1b038)
+
+
+### Talk of the day page
+![StartupTalkLink](https://github.com/tannerbr/startup1/assets/131897609/be5fc8df-d50b-443a-a4a7-d7e386825b1b)
+
 
