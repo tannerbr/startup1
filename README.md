@@ -16,10 +16,10 @@ my startup project will be a website that allows people to recommend their favor
 
 
 ### Suggest Page
-![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
+![StartupTalkLink](https://github.com/tannerbr/startup1/assets/131897609/be5fc8df-d50b-443a-a4a7-d7e386825b1b)
 
 
 ### Talk of the day page
-![StartupTalkLink](https://github.com/tannerbr/startup1/assets/131897609/be5fc8df-d50b-443a-a4a7-d7e386825b1b)
+![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
 
 
