@@ -12,11 +12,11 @@ my startup project will be a website that allows people to recommend their favor
 ## Images of my startup outline
 
 ### Weclome page
-![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
+![StartupLoginTemplate](https://github.com/tannerbr/startup1/assets/131897609/96747e86-c452-49e6-8922-d052dcd1b038)
 
 
 ### Suggest Page
-![StartupLoginTemplate](https://github.com/tannerbr/startup1/assets/131897609/96747e86-c452-49e6-8922-d052dcd1b038)
+![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
 
 
 ### Talk of the day page
