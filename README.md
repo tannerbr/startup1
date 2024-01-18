@@ -7,7 +7,7 @@ my startup project will be a website that allows people to recommend their favor
 ## How will represent all technologies 
 **Authentication:** This will be accomplished by having the user login with a username to use the webpage and suggest talks for other users
 **Database Data:** This will be accomplished by storing talks given by the users and finding the most suggest talk in the list
-**Websocket Data:** This will be accomplished by giving the live most suggested talk from the list given by the users
+**Websocket Data:** This will be accomplished by giving the live most suggested talk from the list given by the users. Could also allow users to like or comment on a specific talk they enjoyed 
 
 ## Images of my startup outline
 
