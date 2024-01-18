@@ -22,4 +22,7 @@ my startup project will be a website that allows people to recommend their favor
 ### Talk of the day page
 ![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
 
+### Suggested Talks by Apostle
+![StartupAllTalksPage](https://github.com/tannerbr/startup1/assets/131897609/97685cce-122c-434a-a816-a25641c9752e)
+
 
