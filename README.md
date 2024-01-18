@@ -12,17 +12,18 @@ my startup project will be a website that allows people to recommend their favor
 ## Images of my startup outline
 
 ### Weclome page
-![StartupLoginTemplate](https://github.com/tannerbr/startup1/assets/131897609/96747e86-c452-49e6-8922-d052dcd1b038)
+![Welcome2](https://github.com/tannerbr/startup1/assets/131897609/cf223dae-0cf1-4ead-a652-9bafe8885269)
 
 
 ### Suggest Page
-![StartupTalkLink](https://github.com/tannerbr/startup1/assets/131897609/be5fc8df-d50b-443a-a4a7-d7e386825b1b)
+![PostSignIn2](https://github.com/tannerbr/startup1/assets/131897609/fc88c7cb-9eb6-49af-bf60-96fff4039fab)
 
 
 ### Talk of the day page
-![StartupDisplayTalk](https://github.com/tannerbr/startup1/assets/131897609/83e2c692-9d29-451d-9173-4158c611d3fb)
+![ShowTalk2](https://github.com/tannerbr/startup1/assets/131897609/71a593dc-1548-4b65-813d-1ce4d89126b5)
+
 
 ### Suggested Talks by Apostle
-![StartupAllTalksPage](https://github.com/tannerbr/startup1/assets/131897609/97685cce-122c-434a-a816-a25641c9752e)
+![StartupAllTalksPage](https://github.com/tannerbr/startup1/assets/131897609/35c0c31f-cfa5-4575-820e-d661bf9c2b78)
 
 
