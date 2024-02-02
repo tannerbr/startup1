@@ -22,10 +22,10 @@ Properly structured HTML
 10% Links between pages as necessary --CHECK
 10% Application textual content --CHECK
 10% Placeholder for 3rd party service calls 
-10% Application images -- 
+10% Application images -- CHECK
 10% Login placeholder, including user name display --CHECK
-10% Database data placeholder showing content stored in the database
-10% WebSocket data placeholder showing where realtime communication will go
+10% Database data placeholder showing content stored in the database -- CHECK
+10% WebSocket data placeholder showing where realtime communication will go -- CHECK
 
 
 ## Images of my startup outline
