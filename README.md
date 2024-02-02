@@ -27,3 +27,20 @@ my startup project will be a website that allows people to recommend their favor
 ![StartupAllTalksPage](https://github.com/tannerbr/startup1/assets/131897609/35c0c31f-cfa5-4575-820e-d661bf9c2b78)
 
 
+WHAT HAS BEEN DONE FOR DELIVERABLE 
+Prerequisite: Simon HTML deployed to your production environment
+Prerequisite: A link to your GitHub startup repository prominently displayed on your application's home page
+Prerequisite: Notes in your startup Git repository README.md file documenting what you modified and added with this deliverable. The TAs will only grade things that have been clearly described as being completed. Review the voter app as an example.
+Prerequisite: At least 10 git commits spread consistently throughout the assignment period.
+Properly structured HTML
+
+20% HTML pages for each component of your application --CHECK
+10% Proper use of HTML tags including BODY, NAV, MAIN, HEADER, FOOTER --CHECK
+10% Links between pages as necessary --CHECK
+10% Application textual content --CHECK
+10% Placeholder for 3rd party service calls 
+10% Application images -- 
+10% Login placeholder, including user name display --CHECK
+10% Database data placeholder showing content stored in the database
+10% WebSocket data placeholder showing where realtime communication will go
+
