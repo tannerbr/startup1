@@ -27,7 +27,7 @@ my startup project will be a website that allows people to recommend their favor
 ![StartupAllTalksPage](https://github.com/tannerbr/startup1/assets/131897609/35c0c31f-cfa5-4575-820e-d661bf9c2b78)
 
 
-WHAT HAS BEEN DONE FOR DELIVERABLE 
+### WHAT HAS BEEN DONE FOR DELIVERABLE 
 Prerequisite: Simon HTML deployed to your production environment
 Prerequisite: A link to your GitHub startup repository prominently displayed on your application's home page
 Prerequisite: Notes in your startup Git repository README.md file documenting what you modified and added with this deliverable. The TAs will only grade things that have been clearly described as being completed. Review the voter app as an example.
