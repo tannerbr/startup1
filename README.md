@@ -17,12 +17,12 @@ Prerequisite: Notes in your startup Git repository README.md file documenting wh
 Prerequisite: At least 10 git commits spread consistently throughout the assignment period.
 Properly structured HTML
 
-HTML pages - Two HTML page that represent the ability to login and vote.
-Links - The login page automatically links to the voter page. The voter page contains links for every voting choice.
+HTML pages - three HTML page that represent the ability to login, comment and like comments (user interaction).
+Links - The login page links to the suggest a talk page. The suggest page contains space for users to suggest and link talks.
 Text - Each of the voting choices is represented by a textual description.
-Images - I couldn't figure out how to include an image and so I didn't do this. 😔
-DB/Login - Input box and submit button for login. The voting choices represent data pulled from the database.
-WebSocket - The count of voting results represent the tally of realtime votes.
+Images - Each page has at least one image 
+DB/Login - Input box and submit button for login and email. The liking and leaving comments represent data pulled from the database.
+WebSocket - The count of liking talks represent the tally of realtime likes.
 
 
 ## Images of my startup outline
