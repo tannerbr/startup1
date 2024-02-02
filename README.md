@@ -17,15 +17,15 @@ Prerequisite: Notes in your startup Git repository README.md file documenting wh
 Prerequisite: At least 10 git commits spread consistently throughout the assignment period.
 Properly structured HTML
 
-20% HTML pages for each component of your application --CHECK
-10% Proper use of HTML tags including BODY, NAV, MAIN, HEADER, FOOTER --CHECK
-10% Links between pages as necessary --CHECK
-10% Application textual content --CHECK
+20% HTML pages for each component of your application --**CHECK**
+10% Proper use of HTML tags including BODY, NAV, MAIN, HEADER, FOOTER --**CHECK**
+10% Links between pages as necessary --**CHECK**
+10% Application textual content --**CHECK**
 10% Placeholder for 3rd party service calls 
-10% Application images -- CHECK
-10% Login placeholder, including user name display --CHECK
-10% Database data placeholder showing content stored in the database -- CHECK
-10% WebSocket data placeholder showing where realtime communication will go -- CHECK
+10% Application images --**CHECK**
+10% Login placeholder, including user name display --**CHECK**
+10% Database data placeholder showing content stored in the database --**CHECK**
+10% WebSocket data placeholder showing where realtime communication will go --**CHECK**
 
 
 ## Images of my startup outline
