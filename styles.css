@@ -7,7 +7,7 @@ p {
 }
 
 img {
-    display: center;
+    display: flex;
     image-rendering: optimizeQuality;
 }
 
@@ -15,8 +15,19 @@ label {
     text-align: center;
 }
 
-label {
-    text-align: center;
+.logo {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+
+}
+
+.video {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
 }
 
 button {
