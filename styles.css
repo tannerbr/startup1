@@ -6,15 +6,7 @@ p {
     text-align: center;
 }
 
-.loginBoxes {
-    text-align: center;
-}
-
-.talkBoxes {
-    text-align: center;
-}
-
-.commentBox {
+.inputBoxes {
     text-align: center;
 }
 
@@ -59,12 +51,11 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     text-decoration:double;
     text-align: left;
-    text-shadow: #ccc;
-    color: dimgrey;
+    color: black;
 }
 
 nav{
-    background-color: lightgrey;
+    background-color: hsl(200, 62%, 16%);
     padding: 10px;
     overflow: hidden;
 }
@@ -79,7 +70,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #ccc;
+    background-color: hsl(200, 52%, 20%);
 
 }
 
