@@ -76,9 +76,6 @@ nav a:hover{
 
 }
 
-
-
-
 @keyframes float {
 	50% {
 		transform: translatey(60px);
@@ -89,7 +86,7 @@ nav a:hover{
     position: absolute;
     width: 200px;
     height: 20px;
-    top: 100%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 3);
@@ -99,9 +96,9 @@ nav a:hover{
 }
 
 @keyframes shrink {
-    0%{width : 50%}
-    50%{width : 30%}
-    100%{width : 50%}
+    0%{ width : 50% }
+    50%{ width : 30% } 
+    100%{width : 50% }
 }
 
 
