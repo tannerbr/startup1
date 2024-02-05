@@ -20,7 +20,7 @@ Properly structured HTML
 HTML pages - three HTML page that represent the ability to login, comment and like comments (user interaction).
 Links - The login page links to the suggest a talk page. The suggest page contains space for users to suggest and link talks.
 Text - Each of the voting choices is represented by a textual description.
-Images - Each page has at least one image 
+Images - There are several images throughout the website 
 DB/Login - Input box and submit button for login and email. The liking and leaving comments represent data pulled from the database.
 WebSocket - The count of liking talks represent the tally of realtime likes.
 
