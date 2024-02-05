@@ -10,6 +10,14 @@ p {
     text-align: center;
 }
 
+.talkBoxes {
+    text-align: center;
+}
+
+.commentBox {
+    text-align: center;
+}
+
 img {
     display: flex;
     image-rendering: optimizeQuality;
