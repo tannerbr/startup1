@@ -9,10 +9,12 @@ p {
 img {
     display: flex;
     image-rendering: optimizeQuality;
+    animation: float 3s ease-out infinite;
 }
 
 label {
-    text-align: center;
+    display: flex;
+    text-align: left;    
 }
 
 .logo {
@@ -20,6 +22,9 @@ label {
     margin-right: auto;
     margin-left: auto;
     width: fit-content;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -34,8 +39,69 @@ button {
     text-align: center;
 }
 
-li {
+footer {
     text-align: center;
-    color: white;
+    text-decoration: underline;
 }
+
+#navbar{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#list{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:double;
+    text-align: left;
+    text-shadow: #ccc;
+    color: dimgrey;
+}
+
+nav{
+    background-color: lightgrey;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav a{
+    float: left;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #ccc;
+
+}
+
+
+
+
+@keyframes float {
+	50% {
+		transform: translatey(60px);
+	}
+}
+
+#shadow {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 3);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: shrink 3s ease-out infinte;
+}
+
+@keyframes shrink {
+    0%{width : 50%}
+    50%{width : 30%}
+    100%{width : 50%}
+}
+
 
