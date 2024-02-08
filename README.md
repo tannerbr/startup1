@@ -10,7 +10,7 @@ my startup project will be a website that allows people to recommend their favor
 **Websocket Data:** This will be accomplished by giving the live most suggested talk from the list given by the users. Could also allow users to like or comment on a specific talk they enjoyed
 
 
-### WHAT HAS BEEN DONE FOR DELIVERABLE 
+### WHAT HAS BEEN DONE FOR HTML DELIVERABLE 
 Prerequisite: Simon HTML deployed to your production environment
 Prerequisite: A link to your GitHub startup repository prominently displayed on your application's home page
 Prerequisite: Notes in your startup Git repository README.md file documenting what you modified and added with this deliverable. The TAs will only grade things that have been clearly described as being completed. Review the voter app as an example.
@@ -23,6 +23,15 @@ Text - Each of the voting choices is represented by a textual description.
 Images - There are several images throughout the website 
 DB/Login - Input box and submit button for login and email. The liking and leaving comments represent data pulled from the database.
 WebSocket - The count of liking talks represent the tally of realtime likes.
+
+
+### WHAT HAS BEEN DONE FOR CSS DELIVERABLE 
+Header, footer, and main content body
+Navigation elements - I dropped the underlines and changed the color for anchor elements.
+Responsive to window resizing - My app looks great on all window sizes and devices
+Application elements - Used good contrast and whitespace
+Application text content - Consistent fonts
+Application images - Still don't have images and so no styling here.
 
 
 ## Images of my startup outline
