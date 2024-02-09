@@ -84,8 +84,6 @@ nav a:hover{
 	}
 }
 
-
-
 @keyframes shrink {
     0%{ width : 50% }
     50%{ width : 30% } 
