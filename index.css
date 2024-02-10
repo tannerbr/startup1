@@ -37,6 +37,22 @@ body {
 	align-items: center;
 
 }
+
+#table-data {
+    background-color: white;
+    width: 300px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  td,
+  th {
+    color: black;
+    text-align: center;
+    border: black solid thick;
+    padding: 1em;
+  }
   
   menu {
     flex: 1;
