@@ -27,6 +27,12 @@ body {
     animation: float 3s ease-out infinite;
 }
 
+video {
+    flex: auto;
+    margin: auto;
+    display: flex;
+}
+
 .logo {
     display: flex;
     margin-right: auto;

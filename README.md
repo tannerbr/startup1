@@ -26,12 +26,12 @@ WebSocket - The count of liking talks represent the tally of realtime likes.
 
 
 ### WHAT HAS BEEN DONE FOR CSS DELIVERABLE 
-Header, footer, and main content body
-Navigation elements - I dropped the underlines and changed the color for anchor elements.
+Header, footer, and main content body - have a proper header, footer and main content that have been stylized and generally work with proper place holder content 
+Navigation elements - Navigation bar has been stylized to be thematically colored and visually pleasing.
 Responsive to window resizing - My app looks great on all window sizes and devices
-Application elements - Used good contrast and whitespace
+Application elements - colors are complementary such as the nav bar and picture on the first two pages while fonts and color of text are easilty readable 
 Application text content - Consistent fonts
-Application images - Still don't have images and so no styling here.
+Application images - Images have been formated to be decorative and fit the page 
 
 
 ## Images of my startup outline
