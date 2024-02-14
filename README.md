@@ -31,7 +31,7 @@ Navigation elements - Navigation bar has been stylized to be thematically colore
 Responsive to window resizing - My app looks great on all window sizes and devices
 Application elements - colors are complementary such as the nav bar and picture on the first two pages while fonts and color of text are easilty readable 
 Application text content - Consistent fonts
-Application images - Images have been formated to be decorative and fit the page 
+Application images - Images have been formated to be decorative and fit the page
 
 
 ## Images of my startup outline
