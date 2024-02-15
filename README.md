@@ -11,27 +11,27 @@ my startup project will be a website that allows people to recommend their favor
 
 
 ### WHAT HAS BEEN DONE FOR HTML DELIVERABLE 
-Prerequisite: Simon HTML deployed to your production environment
-Prerequisite: A link to your GitHub startup repository prominently displayed on your application's home page
-Prerequisite: Notes in your startup Git repository README.md file documenting what you modified and added with this deliverable. The TAs will only grade things that have been clearly described as being completed. Review the voter app as an example.
-Prerequisite: At least 10 git commits spread consistently throughout the assignment period.
-Properly structured HTML
+* Prerequisite: Simon HTML deployed to your production environment
+* Prerequisite: A link to your GitHub startup repository prominently displayed on your application's home page
+* Prerequisite: Notes in your startup Git repository README.md file documenting what you modified and added with this deliverable. The TAs will only grade things that have been clearly described as being completed. Review the voter app as an example.
+* Prerequisite: At least 10 git commits spread consistently throughout the assignment period.
+* Properly structured HTML
 
-HTML pages - three HTML page that represent the ability to login, comment and like comments (user interaction).
-Links - The login page links to the suggest a talk page. The suggest page contains space for users to suggest and link talks.
-Text - Each of the voting choices is represented by a textual description.
-Images - There are several images throughout the website 
-DB/Login - Input box and submit button for login and email. The liking and leaving comments represent data pulled from the database.
-WebSocket - The count of liking talks represent the tally of realtime likes.
+* HTML pages - three HTML page that represent the ability to login, comment and like comments (user interaction).
+* Links - The login page links to the suggest a talk page. The suggest page contains space for users to suggest and link talks.
+* Text - Each of the voting choices is represented by a textual description.
+* Images - There are several images throughout the website 
+* DB/Login - Input box and submit button for login and email. The liking and leaving comments represent data pulled from the database.
+* WebSocket - The count of liking talks represent the tally of realtime likes.
 
 
 ### WHAT HAS BEEN DONE FOR CSS DELIVERABLE 
-Header, footer, and main content body - have a proper header, footer and main content that have been stylized and generally work with proper place holder content 
-Navigation elements - Navigation bar has been stylized to be thematically colored and visually pleasing.
-Responsive to window resizing - My app looks great on all window sizes and devices
-Application elements - colors are complementary such as the nav bar and picture on the first two pages while fonts and color of text are easilty readable 
-Application text content - Consistent fonts
-Application images - Images have been formated to be decorative and fit the page
+* Header, footer, and main content body - have a proper header, footer and main content that have been stylized and generally work with * proper place holder content 
+* Navigation elements - Navigation bar has been stylized to be thematically colored and visually pleasing.
+* Responsive to window resizing - My app looks great on all window sizes and devices
+* Application elements - colors are complementary such as the nav bar and picture on the first two pages while fonts and color of text are easilty readable 
+* Application text content - Consistent fonts
+* Application images - Images have been formated to be decorative and fit the page
 
 
 ## Images of my startup outline
