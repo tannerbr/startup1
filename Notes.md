@@ -84,12 +84,12 @@ element	meaning
 * video- Video content
 * svg- Scalable vector graphic content
 * iframe- Inline frame of another HTML page
-* &	&amp;
-* <	&lt;
-* >	&gt;
-* "	&quot;
-* '	&apos;
-* 😀 &#128512;
+* '&'	&amp;
+* '<'	&lt;
+* '>'	&gt;
+* ' " '	&quot;
+* " ' "	&apos;
+* 😀 "&#128512";
 
 Element	Meaning	Example
 * form	Input container and submission	<form action="form.html" method="post">
@@ -133,3 +133,69 @@ Combinator	Meaning	Example	Description
 * Child	A list of direct children	section > p	Any p that is a direct child of a section
 * General sibling	A list of siblings	div ~ p	Any p that has a div sibling
 * Adjacent sibling	A list of adjacent sibling	div + p	Any p that has an adjacent div sibling
+
+## JavaScript Notes
+Log 
+* console.log('hello');
+*   // OUTPUT: hello
+* console.log('hello %s', 'world');
+*   // OUTPUT: hello world
+* console.log('%c JavaScript Demo', 'font-size:1.5em; color:green;');
+*   // OUTPUT: JavaScript Demo //in large green text
+Timers
+* console.time('demo time');
+*   // ... some code that takes a long time.
+* console.timeEnd('demo time');
+*   // OUTPUT: demo time: 9762.74 ms
+Count 
+* console.count('a');
+*   // OUTPUT: a: 1
+* console.count('a');
+*   // OUTPUT: a: 2
+* console.count('b');
+*   // OUTPUT: b: 1
+
+Declaring Variables
+Type	     Meaning
+* Null	    The type of a variable that has not been assigned a value.
+* Undefined	The type of a variable that has not been defined.
+* Boolean	true or false.
+* Number	A 64-bit signed number.
+* BigInt	A number of arbitrary magnitude.
+* String	A textual sequence of characters.
+* Symbol	A unique value.
+
+Type	                    Use	                                                                       Example
+* Object	A collection of properties represented by name-value pairs. Values can be of any type.	{a:3, b:'fish'}
+* Function	An object that has the ability to be called.	                                        function a() {}
+* Date	    Calendar dates and times.	                                                            new Date('1995-12-17')
+* Array	    An ordered sequence of any type.	                                                    [3, 'fish']
+* Map	    A collection of key-value pairs that support efficient lookups.	                        new Map()
+* JSON	    A lightweight data-interchange format used to share information across programs.	    {"a":3, "b":"fish"}
+
+Strings
+Function	        Meaning
+* length	        The number of characters in the string
+* indexOf()	        The starting index of a given substring
+* split()	        Split the string into an array on the given delimiter string
+* startsWith()      True if the string has a given prefix
+* endsWith()	    True if the string has a given suffix
+* toLowerCase()	    Converts all characters to lowercase
+
+Functions 
+Function	Meaning	Example
+* push	    Add an item to the end of the array	a.push(4)
+* pop	    Remove an item from the end of the array	x = a.pop()
+* slice	    Return a sub-array	a.slice(1,-1)
+* sort	    Run a function to sort an array in place	a.sort((a,b) => b-a)
+* values	Creates an iterator for use with a for of loop	for (i of a.values()) {...}
+* find	    Find the first item satisfied by a test function	a.find(i => i < 2)
+* forEach	Run a function on each array item	a.forEach(console.log)
+* reduce	Run a function to reduce each array item to a single item	a.reduce((a, c) => a + c)
+* map	    Run a function to map an array to a new array	a.map(i => i+i)
+* filter	Run a function to remove items	a.filter(i => i%2)
+* every	    Run a function to test if all items match	a.every(i => i < 3)
+* some	    Run a function to test if any items match	a.some(i => 1 < 1)
+
+
+
