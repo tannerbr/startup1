@@ -45,9 +45,10 @@
       <br>
       <p>Add place holder video here</p>
       <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/ZghD9LplPug" title="Think Celestial! | Russell M. Nelson | October 2023 General Conference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <p>Likes = 1,000</p>
+      <p>Likes: </p>
+      <p id="showLikeCount"></p>
       <p>Like this talk? Hit the like button below!</p>
-      <button id="likeButton" class="btn btn-primary" onclick="game.pressButton(this)">Like</button>
+      <button onclick="clickFunc(this)" id="likeButton" class="btn btn-primary">Like</button>
       </table>
     </main>
 
@@ -57,5 +58,8 @@
         <a class="text-reset" href="https://github.com/tannerbr/startup1/blob/main/README.md">GitHub</a>
       </div>
     </footer>
+
+    <script src="likeButton.js"></script>
+
   </body>
 </html>

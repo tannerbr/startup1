@@ -197,5 +197,8 @@ Function	Meaning	Example
 * every	    Run a function to test if all items match	a.every(i => i < 3)
 * some	    Run a function to test if any items match	a.some(i => 1 < 1)
 
+## In Class Review Notes
+
+
 
 
