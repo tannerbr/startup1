@@ -199,8 +199,20 @@ Function	Meaning	Example
 
 ## In Class Review Notes
 * You can use this CSS to load fonts from Google
-<img alt="pic1" src="./NotePics/NotePic1.webp" ></img>
-* ANSWER TRUE
+<img alt="pic1" src="./NotePics/NotePic1.JPG" ></img>
+
+* ANSWER: TRUE
+* How will the hello world text be oriented 
+<img alt="pic1" src="./NotePics/NotePic2.JPG" ></img>
+
+* ANSWER: two lines with the first line saying World and the second saying Hello
+* the CSS Property padding: 
+<img alt="pic1" src="./NotePics/NotePic3.JPG" ></img>
+
+* ANSWER: Puts space around the content of selected elements 
+
+
+
 
 
 
