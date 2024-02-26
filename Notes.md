@@ -239,13 +239,13 @@ Function	Meaning	Example
 * which of the following is not valid JavaScript function 
 * ANSWER: function f(x) = {} (examples of good JS: const f = (x) => {}, function f(x) {}, const f = function (x) {} )
 * which of the following is not a valid way to include JavaScript in HTML 
-* ANSWER: <javascript>1+1</javascript> (examples of good JS: <script>1+1</script>, "<script src='main.js' />, <div onclick='1+1' /> )
+* ANSWER: <!-- <javascript>1+1</javascript> (examples of good JS: <script>1+1</script>, "<script src='main.js' />, <div onclick='1+1' />)
 * Which of the following is a valid JavaScript object
 * ANSWER: {n:1}
 * What does the DOM textContent property do
 * sets the child text for an element 
 * Which HTML will create a valid hyperlink 
-* ANSWER: "<a href='https://c.com'>x</a>"
+* ANSWER: <!--<a href='https://c.com'>x</a>-- 
 * Using CSS how would you turn only the BYU text blue
 <img alt="pic9" src="./NotePics/NotePic9.JPG" ></img>
 
