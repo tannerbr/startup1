@@ -198,6 +198,9 @@ Function	Meaning	Example
 * some	    Run a function to test if any items match	a.some(i => 1 < 1)
 
 ## In Class Review Notes
+* You can use this CSS to load fonts from Google
+<img alt="pic1" src="./NotePics/NotePic1.webp" ></img>
+* ANSWER TRUE
 
 
 
