@@ -245,7 +245,7 @@ Function	Meaning	Example
 * What does the DOM textContent property do
 * sets the child text for an element 
 * Which HTML will create a valid hyperlink 
-* ANSWER: <a href='https://c.com'>x</a>
+* ANSWER: "<a href='https://c.com'>x</a>"
 * Using CSS how would you turn only the BYU text blue
 <img alt="pic9" src="./NotePics/NotePic9.JPG" ></img>
 
