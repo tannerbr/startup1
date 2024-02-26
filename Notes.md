@@ -203,13 +203,71 @@ Function	Meaning	Example
 
 * ANSWER: TRUE
 * How will the hello world text be oriented 
-<img alt="pic1" src="./NotePics/NotePic2.JPG" ></img>
+<img alt="pic2" src="./NotePics/NotePic2.JPG" ></img>
 
 * ANSWER: two lines with the first line saying World and the second saying Hello
 * the CSS Property padding: 
-<img alt="pic1" src="./NotePics/NotePic3.JPG" ></img>
+<img alt="pic3" src="./NotePics/NotePic3.JPG" ></img>
 
 * ANSWER: Puts space around the content of selected elements 
+* Executing the following will out: 
+<img alt="pic4" src="./NotePics/NotePic4.JPG" ></img>
+
+* ANSWER: 4
+* In HTML what does div do 
+* ANSWER: Creates a division element 
+* What is the order of CSS box model starting from outside going in
+* ANSWER: margin, border, padding, content
+* What does the following code output 
+<img alt="pic5" src="./NotePics/NotePic5.JPG" ></img>
+
+* ANSWER: ['rat', 'fish']
+* What does the following code output 
+<img alt="pic6" src="./NotePics/NotePic6.JPG" ></img>
+
+* ANSWER: cow:rat:fish
+* what does the following code output
+<img alt="pic7" src="./NotePics/NotePic7.JPG" ></img>
+
+* ANSWER: ['a1', 'a2', 'a3']
+* What does the following code do
+<img alt="pic8" src="./NotePics/NotePic8.JPG" ></img>
+
+* ANSWER: adds mouseover event listener to a p element 
+* What is the HTML tag for an unordered list
+* ANSWER: < ul >
+* which of the following is not valid JavaScript function 
+* ANSWER: function f(x) = {} (examples of good JS: const f = (x) => {}, function f(x) {}, const f = function (x) {} )
+* which of the following is not a valid way to include JavaScript in HTML 
+* ANSWER: <javascript>1+1</javascript> (examples of good JS: <script>1+1</script>, "<script src='main.js' />, <div onclick='1+1' /> )
+* Which of the following is a valid JavaScript object
+* ANSWER: {n:1}
+* What does the DOM textContent property do
+* sets the child text for an element 
+* Which HTML will create a valid hyperlink 
+* ANSWER: <a href='https://c.com'>x</a>
+* Using CSS how would you turn only the BYU text blue
+<img alt="pic9" src="./NotePics/NotePic9.JPG" ></img>
+
+* ANSWER: div.header { color: blue; }
+* Which of the following is valid JSON
+* ANSWER: {"x":3}
+* The following console command makes a script executable 
+* ANSWER: chmod +x deploy.sh
+* which of the following is a DNS subdomain 
+* ANSWER: c260.cs.byu.edu
+* To point to another DNS record you should use the following DNS record type
+* ANSWER: CNAME 
+* What will be the following output 
+<img alt="pic10" src="./NotePics/NotePic10.JPG" ></img>
+
+* ANSWER: burger fries taco shake noodles
+* what will be the following output 
+<img alt="pic11" src="./NotePics/NotePic11.JPG" ></img>
+
+* ANSWER: A D B
+
+
 
 
 
