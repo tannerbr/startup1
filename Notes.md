@@ -95,6 +95,7 @@ Element Meaning Example
 <img alt="elem" src="./NotePics/ElementMeaningExample.JPG" ></img>
 
 Promise and Async/Await
+<br>
 <img alt="Async" src="./NotePics/AsyncAwait.JPG" ></img>
 <img alt="pizza" src="./NotePics/PizzaPromise.JPG" ></img>
 
