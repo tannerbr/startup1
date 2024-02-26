@@ -91,41 +91,33 @@ element	meaning
 * " ' "	&apos;
 * 😀 "&#128512";
 
-Element	Meaning	Example
-* form	Input container and submission	<form action="form.html" method="post">
-* fieldset	Labeled input grouping	<fieldset> ... </fieldset>
-* input	Multiple types of user input	<input type="" />
-* select	Selection dropdown	<select><option>1</option></select>
-* optgroup	Grouped selection dropdown	<optgroup><option>1</option></optgroup>
-* option	Selection option	<option selected>option2</option>
-* textarea	Multiline text input	<textarea></textarea>
-* label	Individual input label	<label for="range">Range: </label>
-* output	Output of input	<output for="range">0</output>
-* meter	Display value with a known range	<meter min="0" max="100" value="50"></meter>
+Element Meaning Example
+<img alt="elem" src="./NotePics/ElementMeaningExample.JPG" ></img>
+
 
 Type	Meaning
-* text	Single line textual value
-* password	Obscured password
-* email	Email address
-* tel	Telephone number
-* url	URL address
-* number	Numerical value
-* checkbox	Inclusive selection
-* radio	Exclusive selection
-* range	Range limited number
-* date	Year, month, day
-* datetime-local	Date and time
-* month	Year, month
-* week	Week of year
-* color	Color
-* file	Local file
-* submit	button to trigger form submission
+* text-	Single line textual value
+* password-	Obscured password
+* email-	Email address
+* tel-	Telephone number
+* url-	URL address
+* number-	Numerical value
+* checkbox-	Inclusive selection
+* radio-	Exclusive selection
+* range-	Range limited number
+* date-	Year, month, day
+* datetime-local-	Date and time
+* month-	Year, month
+* week-	Week of year
+* color-	Color
+* file-	Local file
+* submit-	button to trigger form submission
 
 Attribute	Meaning
-* name	The name of the input. This is submitted as the name of the input if used in a form
-* disabled	Disables the ability for the user to interact with the input
-* value	The initial value of the input
-* required	Signifies that a value is required in order to be valid
+* name-	The name of the input. This is submitted as the name of the input if used in a form
+* disabled-	Disables the ability for the user to interact with the input
+* value-	The initial value of the input
+* required-	Signifies that a value is required in order to be valid
 
 ## CSS Notes
 Combinator	Meaning	Example	Description
@@ -157,45 +149,45 @@ Count
 
 Declaring Variables
 Type	     Meaning
-* Null	    The type of a variable that has not been assigned a value.
-* Undefined	The type of a variable that has not been defined.
-* Boolean	true or false.
-* Number	A 64-bit signed number.
-* BigInt	A number of arbitrary magnitude.
-* String	A textual sequence of characters.
-* Symbol	A unique value.
+* Null-	     The type of a variable that has not been assigned a value.
+* Undefined- The type of a variable that has not been defined.
+* Boolean-	 true or false.
+* Number-	 A 64-bit signed number.
+* BigInt-	 A number of arbitrary magnitude.
+* String-	 A textual sequence of characters.
+* Symbol-	 A unique value.
 
 Type	                    Use	                                                                       Example
-* Object	A collection of properties represented by name-value pairs. Values can be of any type.	{a:3, b:'fish'}
-* Function	An object that has the ability to be called.	                                        function a() {}
-* Date	    Calendar dates and times.	                                                            new Date('1995-12-17')
-* Array	    An ordered sequence of any type.	                                                    [3, 'fish']
-* Map	    A collection of key-value pairs that support efficient lookups.	                        new Map()
-* JSON	    A lightweight data-interchange format used to share information across programs.	    {"a":3, "b":"fish"}
+* Object-	A collection of properties represented by name-value pairs. Values can be of any type.	{a:3, b:'fish'}
+* Function-	An object that has the ability to be called.	                                        function a() {}
+* Date-	    Calendar dates and times.	                                                            new Date('1995-12-17')
+* Array-	    An ordered sequence of any type.	                                                    [3, 'fish']
+* Map-	    A collection of key-value pairs that support efficient lookups.	                        new Map()
+* JSON-	    A lightweight data-interchange format used to share information across programs.	    {"a":3, "b":"fish"}
 
 Strings
 Function	        Meaning
-* length	        The number of characters in the string
-* indexOf()	        The starting index of a given substring
-* split()	        Split the string into an array on the given delimiter string
-* startsWith()      True if the string has a given prefix
-* endsWith()	    True if the string has a given suffix
-* toLowerCase()	    Converts all characters to lowercase
+* length-	        The number of characters in the string
+* indexOf()-	        The starting index of a given substring
+* split()-	        Split the string into an array on the given delimiter string
+* startsWith()-      True if the string has a given prefix
+* endsWith()-	    True if the string has a given suffix
+* toLowerCase()-	    Converts all characters to lowercase
 
 Functions 
 Function	Meaning	Example
-* push	    Add an item to the end of the array	a.push(4)
-* pop	    Remove an item from the end of the array	x = a.pop()
-* slice	    Return a sub-array	a.slice(1,-1)
-* sort	    Run a function to sort an array in place	a.sort((a,b) => b-a)
-* values	Creates an iterator for use with a for of loop	for (i of a.values()) {...}
-* find	    Find the first item satisfied by a test function	a.find(i => i < 2)
-* forEach	Run a function on each array item	a.forEach(console.log)
-* reduce	Run a function to reduce each array item to a single item	a.reduce((a, c) => a + c)
-* map	    Run a function to map an array to a new array	a.map(i => i+i)
-* filter	Run a function to remove items	a.filter(i => i%2)
-* every	    Run a function to test if all items match	a.every(i => i < 3)
-* some	    Run a function to test if any items match	a.some(i => 1 < 1)
+* push-	    Add an item to the end of the array	a.push(4)
+* pop-	    Remove an item from the end of the array	x = a.pop()
+* slice-	Return a sub-array	a.slice(1,-1)
+* sort-	    Run a function to sort an array in place	a.sort((a,b) => b-a)
+* values-	Creates an iterator for use with a for of loop	for (i of a.values()) {...}
+* find-	    Find the first item satisfied by a test function	a.find(i => i < 2)
+* forEach-	Run a function on each array item	a.forEach(console.log)
+* reduce-	Run a function to reduce each array item to a single item	a.reduce((a, c) => a + c)
+* map-	    Run a function to map an array to a new array	a.map(i => i+i)
+* filter-	Run a function to remove items	a.filter(i => i%2)
+* every-	Run a function to test if all items match	a.every(i => i < 3)
+* some-	    Run a function to test if any items match	a.some(i => 1 < 1)
 
 ## In Class Review Notes
 * You can use this CSS to load fonts from Google
@@ -245,7 +237,7 @@ Function	Meaning	Example
 * What does the DOM textContent property do
 * sets the child text for an element 
 * Which HTML will create a valid hyperlink 
-* ANSWER: <!--<a href='https://c.com'>x</a>-- 
+* ANSWER: a href='https://c.com'>x</a>
 * Using CSS how would you turn only the BYU text blue
 <img alt="pic9" src="./NotePics/NotePic9.JPG" ></img>
 
