@@ -94,6 +94,10 @@ element	meaning
 Element Meaning Example
 <img alt="elem" src="./NotePics/ElementMeaningExample.JPG" ></img>
 
+Promise and Async/Await
+<img alt="Async" src="./NotePics/AsyncAwait.JPG" ></img>
+<img alt="pizza" src="./NotePics/PizzaPromise.JPG" ></img>
+
 
 Type	Meaning
 * text-	Single line textual value
@@ -121,10 +125,10 @@ Attribute	Meaning
 
 ## CSS Notes
 Combinator	Meaning	Example	Description
-* Descendant	A list of descendants	body section	Any section that is a descendant of a body
-* Child	A list of direct children	section > p	Any p that is a direct child of a section
-* General sibling	A list of siblings	div ~ p	Any p that has a div sibling
-* Adjacent sibling	A list of adjacent sibling	div + p	Any p that has an adjacent div sibling
+* Descendant-	A list of descendants	body section	Any section that is a descendant of a body
+* Child-	A list of direct children	section > p	Any p that is a direct child of a section
+* General sibling-	A list of siblings	div ~ p	Any p that has a div sibling
+* Adjacent sibling-	A list of adjacent sibling	div + p	Any p that has an adjacent div sibling
 
 ## JavaScript Notes
 Log 
