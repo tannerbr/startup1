@@ -41,36 +41,25 @@
     </header>
 
     <main class="container-fluid bg-secondary text-center">
-      <div>
-        <h1>Talk Library</h1>
-        <p>Here are all suggested talks like and comment to show us which ones you liked best</p>
-        <p>*Keep track of real time likes here*</p>
-        <table id="table-data">
-          <tr>
-            <th>Talk Name</th>
-            <th>Number of Likes</th>
-          </tr>
-          <tr>
-            <td>Think Celestial</td>
-            <td><p>Likes: </p>
-              <p id="tableLikeCount"></p>
-            </td>
-          </tr>
+      <main class="container-fluid bg-secondary text-center">
+        <table class="table table-warning table-striped-columns">
+          <thead class="table-dark">
+            <tr>
+              <th style="color: aliceblue;">Name</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="talks"></tbody>
         </table>
-        <p>Here are all suggested talks like and comment to show us which ones you liked best</p>
-          <input type="text" id="comment" placeholder="" />
-          <button type="submit" class="btn btn-primary">Enter</button>
-        </form>
-      </div>
-      <br>
-      <br>
-    </main>
-
-    <footer class="bg-dark text-white-50">
-      <div class="container-fluid">
-        <span class="text-reset">Tanner Briggs</span>
-        <a class="text-reset" href="https://github.com/tannerbr/startup1/blob/main/README.md">GitHub</a>
-      </div>
-    </footer>
-  </body>
-</html>
+      </main>
+  
+      <footer class="bg-dark text-white-50">
+        <div class="container-fluid">
+          <span class="text-reset">Tanner Briggs</span>
+          <a class="text-reset" href="https://github.com/tannerbr/startup1/blob/main/README.md">GitHub</a>
+        </div>
+      </footer>
+  
+      <script src="loadTalks.js"></script>
+    </body>
+  </html>
