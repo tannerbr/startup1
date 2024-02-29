@@ -25,6 +25,10 @@ function clickFunc(event){
 
 likeButton.addEventListener('click', clickFunc); 
 
+function tableFunc() {
+    var tableLikes = localStorage.getItem(likeCountInt);
+}
+
 
 
 
