@@ -33,6 +33,14 @@ my startup project will be a website that allows people to recommend their favor
 * Application text content - Consistent fonts
 * Application images - Images have been formated to be decorative and fit the page
 
+### WHAT HAS BEEN DONE FOR JS DELIVERABLE
+* number of likes is updated and counted live if the user presses the like button
+* table shows the list of all suggested talks
+* login.js stores login data of the user
+* login and like buttons function for the user 
+* likes and user info stored for future database data
+* like button for talk of the day supports future websocket applications
+
 
 ## Images of my startup outline
 
