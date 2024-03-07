@@ -1,0 +1,16 @@
+{
+  "name": "startup1",
+  "version": "1.0.0",
+  "description": "my startup project will be a website that allows people to recommend their favorite talk. The user will first login and then be taken to a page where they will be able to recommend their talk and give a few reasons why they like it. The user can then go to the Talk of the Day page where the highest suggested talk will be linked. This talk will be taken from the list of suggestions of all the users and whichever appears the most will be the suggested talk of the day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "node": "^21.7.0"
+  }
+}
