@@ -16,12 +16,14 @@ app.use(`/api`, apiRouter);
 // GetTalk
 apiRouter.get('/talks', (_req, res) => {
   res.send(talksList);
+  console.log("called get");
 });
 
 // SubmitTalk
 apiRouter.post('/talks', (req, res) => {
   talksList = updateTalks(req.body, talksList);
   res.send(talksList);
+  console.log("added Talk")
 });
 
 // Return the application's default page if the path is unknown
