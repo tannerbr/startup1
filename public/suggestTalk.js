@@ -37,7 +37,8 @@ const linkNameEl = document.querySelector('#links');
     linkNameEl.textContent = this.getLink();
 
 function displayQuote(data) {
-  fetch('CONFERENCE QUOTE WEBSITE HERE') // PUT 3RD PARTY WEBSITE HERE
+  fetch('https://api.quotable.io/random?tags=religion|Bible') // PUT 3RD PARTY WEBSITE HERE
+  
     .then((response) => response.json())
     .then((data) => {
       const containerEl = document.querySelector('#quote');
