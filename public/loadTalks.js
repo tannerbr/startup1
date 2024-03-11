@@ -1,6 +1,6 @@
 // Change for service 
-async function loadTalks() {
-  let talksList = [];
+let talksList = [];
+async function loadTalks() {  
   try {
     // Get the latest high talks from the service
     const response = await fetch('/api/talks');
@@ -8,6 +8,7 @@ async function loadTalks() {
     // Save the talks in case go offline in the future
     console.log(talksList);
     localStorage.setItem('talks', JSON.stringify(talksList));
+  
   } catch {
     // If error use the last saved talks
     const talksText = localStorage.getItem('talks');
@@ -15,9 +16,9 @@ async function loadTalks() {
       talksList = JSON.parse(talksText);
     }
   }
-  displayTalks(talksList);
+
 }
-function displayTalks(talksList) {
+async function displayTalks() {
   const tableBodyEl = document.querySelector('#talks');
   if (talksList.length) {
     // Update the DOM with talks
@@ -25,7 +26,6 @@ function displayTalks(talksList) {
       const nameTdEl = document.createElement('td');
       const linkTdEl = document.createElement('td');
 
-      positionTdEl.textContent = i + 1;
       nameTdEl.textContent = talk.talkTitle;
       linkTdEl.textContent = talk.talkLink;
 
@@ -39,7 +39,12 @@ function displayTalks(talksList) {
     tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to suggest a talk</td></tr>';
   }
 }
-loadTalks();
+
+window.onload = async () => {
+  await loadTalks();
+  displayTalks(talksList);
+}
+
 
 
 // old code before service

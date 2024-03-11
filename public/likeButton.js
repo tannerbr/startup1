@@ -9,7 +9,7 @@ var likeCountInt = parseInt(likeCount) || 0;
 const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 
-function clickFunc(event){
+async function clickFunc(event){
     event.stopPropagation();
     // if (userClicked === false) {
     //     likeCountInt = likeCountInt + 1;
