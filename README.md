@@ -41,6 +41,14 @@ my startup project will be a website that allows people to recommend their favor
 * likes and user info stored for future database data
 * like button for talk of the day supports future websocket applications
 
+### WHAT HAS BEEN DONE FOR MY SERVICE DELIVERABLE 
+* Node and express used
+* static middleware used 
+* 3rd party called to display a random religious quote 
+* service endpoints provided on backend and called on front end to display suggested talks in my allTalks table 
+
+
+
 
 ## Images of my startup outline
 
