@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-talksList = [];
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -21,7 +20,7 @@ apiRouter.get('/talks', (_req, res) => {
 
 // SubmitTalk
 apiRouter.post('/talks', (req, res) => {
-  talksList = req.body;
+  talksList = updateTalks(req.body, talksList);
   res.send(talksList);
 });
 
@@ -29,7 +28,6 @@ apiRouter.post('/talks', (req, res) => {
 app.use((_req, res) => {
   res.sendFile('index.html', { root: 'public' });
 });
-
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
@@ -38,24 +36,8 @@ app.listen(port, () => {
 // The high scores are saved in memory and disappear whenever the service is restarted.
 
 // make an http endpoint to get talks 
-let scores = [];
-function updateScores(newScore, scores) {
-  let found = false;
-  for (const [i, prevScore] of scores.entries()) {
-    if (newScore.score > prevScore.score) {
-      scores.splice(i, 0, newScore);
-      found = true;
-      break;
-    }
-  }
-
-  if (!found) {
-    scores.push(newScore);
-  }
-
-  if (scores.length > 10) {
-    scores.length = 10;
-  }
-
-  return scores;
+let talksList = [];
+function updateTalks(newTalk, talksList) {  
+  talksList.push(newTalk);  
+  return talksList;
 }
