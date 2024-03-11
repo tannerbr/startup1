@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+talksList = [];
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -16,13 +16,13 @@ app.use(`/api`, apiRouter);
 
 // GetTalk
 apiRouter.get('/talks', (_req, res) => {
-  res.send(scores);
+  res.send(talksList);
 });
 
 // SubmitTalk
 apiRouter.post('/talks', (req, res) => {
-  scores = updateScores(req.body, scores);
-  res.send(scores);
+  talksList = req.body;
+  res.send(talksList);
 });
 
 // Return the application's default page if the path is unknown

@@ -6,6 +6,7 @@ async function loadTalks() {
     const response = await fetch('/api/talks');
     talksList = await response.json();
     // Save the talks in case go offline in the future
+    console.log(talksList);
     localStorage.setItem('talks', JSON.stringify(talksList));
   } catch {
     // If error use the last saved talks
