@@ -1,19 +1,19 @@
-async function loadTalks() {  
-  try {
-    // Get the latest high talks from the service
-    const response = await fetch('/api/talks');
-    talksList = await response.json();
-    // Save the talks in case go offline in the future
-    console.log(talksList);
-    localStorage.setItem('talks', JSON.stringify(talksList));
-  } catch {
-    // If error use the last saved talks
-    const talksText = localStorage.getItem('talks');
-    if (talksText) {
-      talksList = JSON.parse(talksText);
-    }
-  }
-}
+// async function loadTalks() {  
+//   try {
+//     // Get the latest high talks from the service
+//     const response = await fetch('/api/talks');
+//     talksList = await response.json();
+//     // Save the talks in case go offline in the future
+//     console.log(talksList);
+//     localStorage.setItem('talks', JSON.stringify(talksList));
+//   } catch {
+//     // If error use the last saved talks
+//     const talksText = localStorage.getItem('talks');
+//     if (talksText) {
+//       talksList = JSON.parse(talksText);
+//     }
+//   }
+// }
 
 function getTalkTitle() {
   const talkElement = document.querySelector("#talks");
@@ -29,6 +29,7 @@ function saveTalk() {
   const talkTitle = getTalkTitle();
   const talkLink = getLink();
   const talkObject = { talkTitle, talkLink };
+
 
   fetch('/api/talks', {
       method: 'POST',
@@ -85,12 +86,18 @@ function getUserName() {
     return localStorage.getItem('userName') ?? 'Mystery User';
 }
 
-const playerNameEl = document.querySelector('.user-name');
+const playerNameEl = document.getElementById('user-name');
     playerNameEl.textContent = this.getUserName();
 
 const linkNameEl = document.querySelector('#links');
     linkNameEl.textContent = this.getLink();
 
+
+window.onload = () => {
+  loadTalks();
+  displayTalks();
+
+}
 function displayQuote(data) {
   fetch('https://api.quotable.io/random?tags=religion|Bible')
   
@@ -110,12 +117,8 @@ function displayQuote(data) {
       containerEl.appendChild(authorEl);
     });
 }
+displayQuote();
 
-window.onload = () => {
-  displayQuote();
-  saveTalk();
-  loadTalks();
-  displayTalks();
 
-}
+
 
