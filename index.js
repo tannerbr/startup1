@@ -17,7 +17,11 @@ app.use(`/api`, apiRouter);
 // GetTalk
 apiRouter.get('/talks', (_req, res) => {
   res.send(talksList);
-  console.log("called get");
+  //console.log("called get");
+  apiRouter.get('/talks', async (_req, res) => {
+    const talks = await DB.getTalks();
+    res.send(talks);
+  });
 });
 
 // SubmitTalk

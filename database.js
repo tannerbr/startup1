@@ -16,18 +16,17 @@ const talkCollection = db.collection('talk');
 });
 
 async function addTalk(talk) {
-  const result = await scoreCollection.insertOne(talk);
+  const result = await talkCollection.insertOne(talk);
   return result;
 }
 
-function getHighTalk() {
+function getTalk() {
   const query = { talk: { $gt: 0, $lt: 900 } };
   const options = {
     sort: { talk: -1 },
-    limit: 10,
   };
   const cursor = talkCollection.find(query, options);
   return cursor.toArray();
 }
 
-module.exports = { addScore, getHighScores };
+module.exports = { addTalk, getTalk };
