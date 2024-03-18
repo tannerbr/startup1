@@ -3,8 +3,8 @@ const config = require('./dbConfig.json');
 
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 const client = new MongoClient(url);
-const db = client.db('simon');
-const scoreCollection = db.collection('score');
+const db = client.db('startup');
+const talkCollection = db.collection('talk');
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -15,18 +15,18 @@ const scoreCollection = db.collection('score');
   process.exit(1);
 });
 
-async function addScore(score) {
-  const result = await scoreCollection.insertOne(score);
+async function addTalk(talk) {
+  const result = await scoreCollection.insertOne(talk);
   return result;
 }
 
-function getHighScores() {
-  const query = { score: { $gt: 0, $lt: 900 } };
+function getHighTalk() {
+  const query = { talk: { $gt: 0, $lt: 900 } };
   const options = {
-    sort: { score: -1 },
+    sort: { talk: -1 },
     limit: 10,
   };
-  const cursor = scoreCollection.find(query, options);
+  const cursor = talkCollection.find(query, options);
   return cursor.toArray();
 }
 
