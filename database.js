@@ -22,9 +22,6 @@ async function addTalk(talk) {
 
 function getTalk() {
   const query = { talk: { $gt: 0, $lt: 900 } };
-  const options = {
-    sort: { talk: -1 },
-  };
   const cursor = talkCollection.find(query, options);
   return cursor.toArray();
 }
