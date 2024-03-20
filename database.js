@@ -5,7 +5,7 @@ const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostna
 const client = new MongoClient(url);
 const db = client.db('startup');
 const userCollection = db.collection('user');
-const scoreCollection = db.collection('talk');
+const talkCollection = db.collection('talk');
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -48,4 +48,10 @@ function getTalk() {
   return cursor.toArray();
 }
 
-module.exports = { addTalk, getTalk };
+module.exports = { 
+  addTalk, 
+  getTalk, 
+  getUser, 
+  getUserByToken, 
+  createUser 
+};
