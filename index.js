@@ -85,6 +85,7 @@ secureApiRouter.use(async (req, res, next) => {
   }
 });
 
+
 // GetTalk
 apiRouter.get('/talks', async (_req, res) => {
   const talks = await DB.getTalk();
@@ -120,4 +121,4 @@ function setAuthCookie(res, authToken) {
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
-}); 
+});
