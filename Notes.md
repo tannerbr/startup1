@@ -1,5 +1,6 @@
 Deploying Files 
 ./deployFiles.sh -k "~/Desktop/CS 260/production.pem" -h talkaday.click -s startup
+./deployService.sh -k "~/Desktop/CS 260/production.pem" -h talkaday.click -s startup
 
 ### NOTES FOR MIDTERM
 
