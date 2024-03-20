@@ -18,14 +18,15 @@ app.use(`/api`, apiRouter);
 // GetTalk
 apiRouter.get('/talks', async (_req, res) => {
   const talks = await DB.getTalk();
+  console.log("get called")
   res.send(talks);
 });
 
 // SubmitTalk
 apiRouter.post('/talks', (req, res) => {
-  talksList = DB.addTalk(req.body, talksList);
+  let talksList = DB.addTalk(req.body);
+  console.log("Post called")
   res.send(talksList);
-  console.log("added Talk")
 });
 
 // Return the application's default page if the path is unknown
