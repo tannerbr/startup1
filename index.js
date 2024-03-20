@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
+const { Db } = require('mongodb');
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -15,18 +16,14 @@ var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 // GetTalk
-apiRouter.get('/talks', (_req, res) => {
-  res.send(talksList);
-  //console.log("called get");
-  apiRouter.get('/talks', async (_req, res) => {
-    const talks = await DB.getTalks();
-    res.send(talks);
-  });
+apiRouter.get('/talks', async (_req, res) => {
+  const talks = await DB.getTalk();
+  res.send(talks);
 });
 
 // SubmitTalk
 apiRouter.post('/talks', (req, res) => {
-  talksList = updateTalks(req.body, talksList);
+  talksList = DB.addTalk(req.body, talksList);
   res.send(talksList);
   console.log("added Talk")
 });
@@ -43,8 +40,3 @@ app.listen(port, () => {
 // The high scores are saved in memory and disappear whenever the service is restarted.
 
 // make an http endpoint to get talks 
-let talksList = [];
-function updateTalks(newTalk, talksList) {  
-  talksList.push(newTalk);  
-  return talksList;
-}
