@@ -62,10 +62,3 @@ async function getUser(email) {
 
   return null;
 }
-
-function setDisplay(controlId, display) {
-  const playControlEl = document.querySelector(`#${controlId}`);
-  if (playControlEl) {
-    playControlEl.style.display = display;
-  }
-}
