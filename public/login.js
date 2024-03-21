@@ -3,10 +3,10 @@
   if (userName) {
     document.querySelector('#userName').textContent = userName;
     setDisplay('loginControls', 'none');
-    setDisplay('playControls', 'block');
+    setDisplay('suggestControls', 'block');
   } else {
     setDisplay('loginControls', 'block');
-    setDisplay('playControls', 'none');
+    setDisplay('suggestControls', 'none');
   }
 })();
 
@@ -61,4 +61,12 @@ async function getUser(email) {
   }
 
   return null;
+}
+
+
+function setDisplay(controlId, display) {
+  const suggestControlEl = document.querySelector(`#${controlId}`);
+  if (suggestControlEl) {
+    suggestControlEl.style.display = display;
+  }
 }
