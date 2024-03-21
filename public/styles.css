@@ -80,14 +80,14 @@ nav a:hover{
 
 @keyframes float {
 	50% {
-		transform: translatey(60px);
+		transform: translatey(10px);
 	}
 }
 
 @keyframes shrink {
-    0%{ width : 50% }
-    50%{ width : 30% } 
-    100%{width : 50% }
+    0%{ width : 40% }
+    50%{ width : 20% } 
+    100%{width : 40% }
 }
 
 
