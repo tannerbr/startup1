@@ -47,6 +47,12 @@ my startup project will be a website that allows people to recommend their favor
 * 3rd party called to display a random religious quote 
 * service endpoints provided on backend and called on front end to display suggested talks in my allTalks table 
 
+### WHAT HAS BEEN DONE FOR LOGIN DELIVERABLE
+* User authentication and user information input to database
+* User information displayed (shows username when singed in)
+* User allowed to create accounts by creating a username and password (can login/logout)
+* Users not allowed to proceed past index.hmtl until they sign in or create an account
+* Database connected and Mongodb set up 
 
 
 
