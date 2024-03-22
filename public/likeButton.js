@@ -5,16 +5,16 @@
 
 var likeCount = localStorage.getItem('likeCountStored');
 var likeCountInt = parseInt(likeCount) || 0;
-//var userClicked = localStorage.getItem(userClicked);
+var userClicked = localStorage.getItem(userClicked);
 const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 
 async function clickFunc(event){
     event.stopPropagation();
-    // if (userClicked === false) {
-    //     likeCountInt = likeCountInt + 1;
-    //     userClicked = true;
-    // } save for database section
+    if (userClicked === false) {
+        likeCountInt = likeCountInt + 1;
+        userClicked = true;
+    } //save for database section
     likeCountInt = likeCountInt + 1;
     console.log(likeCountInt);
     showLikeCount.innerHTML = likeCountInt;

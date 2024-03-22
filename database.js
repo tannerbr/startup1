@@ -8,6 +8,7 @@ const client = new MongoClient(url);
 const db = client.db('startup');
 const userCollection = db.collection('user');
 const talkCollection = db.collection('talk');
+const likeCollection = db.collection("like");
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -50,10 +51,30 @@ function getTalk() {
   return cursor.toArray();
 }
 
+async function countLikes() {
+  event.stopPropagation();
+    if (userClicked === false) {
+        likeCountInt = likeCountInt + 1;
+        userClicked = true;
+    } //save for database section
+    likeCountInt = likeCountInt + 1;
+    console.log(likeCountInt);
+    showLikeCount.innerHTML = likeCountInt;
+    console.log(likeCountInt);
+    // .setItem('likeCountStored', likeCountInt);
+    // call front end to service
+    // front end call countLikes
+    // call likesCollection (mongodb updateOne)
+    // likeCollection.updateOne
+    // return new count
+    console.log(likeCountInt);
+}
+
 module.exports = { 
   addTalk, 
   getTalk, 
   getUser, 
-  getUserByToken, 
+  getUserByToken,
+  countLikes, 
   createUser 
 };
