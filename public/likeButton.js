@@ -9,6 +9,42 @@ var userClicked = localStorage.getItem(userClicked);
 const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 
+
+configureWebSocket() {
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    this.socket.onopen = (event) => {
+        this.displayMsg('system', 'talk', 'connected');
+    };
+    this.socket.onclose = (event) => {
+        this.displayMsg('system', 'talk', 'disconnected');
+    };
+    this.socket.onmessage = async (event) => {
+        const msg = JSON.parse(await event.data.text());
+        if (msg.type === TalkEndEvent) {
+        this.displayMsg('user', msg.from, `liked this talk`);
+        } else if (msg.type === TalkStartEvent) {
+        this.displayMsg('user', msg.from, `started watching`);
+        }
+    };
+}
+
+displayMsg(cls, from, msg) {
+    const chatText = document.querySelector('#user-messages');
+    chatText.innerHTML =
+      `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+  }
+
+// when like button is hit
+  broadcastEvent(from, type, value) {
+    const event = {
+      from: from,
+      type: type,
+      value: value,
+    };
+    this.socket.send(JSON.stringify(event));
+  }
+
 async function clickFunc(event){
     event.stopPropagation();
     if (userClicked === false) {
@@ -31,33 +67,6 @@ function tableFunc() {
 
 
 
-// USE THIS TO UPDATE LIKES????????
-// updateScoresLocal(newScore) {
-//     let scores = [];
-//     const scoresText = localStorage.getItem('scores');
-//     if (scoresText) {
-//       scores = JSON.parse(scoresText);
-//     }
-
-//     let found = false;
-//     for (const [i, prevScore] of scores.entries()) {
-//       if (newScore > prevScore.score) {
-//         scores.splice(i, 0, newScore);
-//         found = true;
-//         break;
-//       }
-//     }
-
-//     if (!found) {
-//       scores.push(newScore);
-//     }
-
-//     if (scores.length > 10) {
-//       scores.length = 10;
-//     }
-
-//     localStorage.setItem('scores', JSON.stringify(scores));
-//   }
 
 
 
