@@ -8,6 +8,7 @@ var likeCountInt = parseInt(likeCount) || 0;
 var userClicked = localStorage.getItem(userClicked);
 const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
+var socket;
 
 // Event messages
 const likeEvent = 'likeEvent';
@@ -50,10 +51,10 @@ function displayMsg(cls, from, msg) {
     this.socket.send(JSON.stringify(event));
   }
 
-let socket = configureWebSocket();
+let wSocket = configureWebSocket();
 
 async function clickFunc(event){
-    event.stopPropagation();
+    //event.stopPropagation();
     if (userClicked === false) {
         likeCountInt = likeCountInt + 1;
         userClicked = true;
