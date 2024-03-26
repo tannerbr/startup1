@@ -77,6 +77,28 @@ nav a:hover{
     background-color: hsl(199, 42%, 27%);
 }
 
+.user-name {
+    color: rgb(118, 190, 210);
+  }
+  
+  #user-messages {
+    padding-top: 0.25em;
+    opacity: 0.7;
+  }
+
+  
+.event {
+    color: rgb(69, 69, 69);
+  }
+  
+  .user-event {
+    color: rgb(165, 220, 235);
+  }
+  
+  .system-event {
+    color: rgb(221, 148, 40);
+  }
+
 
 @keyframes float {
 	50% {

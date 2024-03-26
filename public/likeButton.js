@@ -9,34 +9,39 @@ var userClicked = localStorage.getItem(userClicked);
 const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 
+// Event messages
+const likeEvent = 'likeEvent';
 
-configureWebSocket() {
+function configureWebSocket() {
     const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
-    this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
-    this.socket.onopen = (event) => {
-        this.displayMsg('system', 'talk', 'connected');
+    socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    socket.onopen = (event) => {
+        displayMsg('system', 'talk', 'connected');
     };
     this.socket.onclose = (event) => {
-        this.displayMsg('system', 'talk', 'disconnected');
+        displayMsg('system', 'talk', 'disconnected');
     };
     this.socket.onmessage = async (event) => {
         const msg = JSON.parse(await event.data.text());
         if (msg.type === TalkEndEvent) {
-        this.displayMsg('user', msg.from, `liked this talk`);
+        displayMsg('user', msg.from, `liked this talk`);
         } else if (msg.type === TalkStartEvent) {
-        this.displayMsg('user', msg.from, `started watching`);
+        displayMsg('user', msg.from, `started watching`);
         }
     };
+    return socket;
 }
 
-displayMsg(cls, from, msg) {
+
+
+function displayMsg(cls, from, msg) {
     const chatText = document.querySelector('#user-messages');
     chatText.innerHTML =
       `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
   }
 
 // when like button is hit
-  broadcastEvent(from, type, value) {
+  function broadcastEvent(from, type, value) {
     const event = {
       from: from,
       type: type,
@@ -44,6 +49,8 @@ displayMsg(cls, from, msg) {
     };
     this.socket.send(JSON.stringify(event));
   }
+
+let socket = configureWebSocket();
 
 async function clickFunc(event){
     event.stopPropagation();
@@ -57,6 +64,8 @@ async function clickFunc(event){
     console.log(likeCountInt);
     localStorage.setItem('likeCountStored', likeCountInt);
     console.log(likeCountInt);
+    broadcastEvent(userName, likeEvent);
+
 }
 
 likeButton.addEventListener('click', clickFunc); 
