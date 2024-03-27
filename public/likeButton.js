@@ -10,6 +10,8 @@ const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 var userName = localStorage.getItem('userName');
 var socket;
+//const userNameEl = document.querySelector('.user-name');
+
 
 // Event messages
 const likeEvent = 'likeEvent';
@@ -56,7 +58,7 @@ function displayMsg(cls, from, msg) {
 
 
 async function clickFunc(event){
-    //event.stopPropagation();
+    event.stopPropagation();
     if (userClicked === false) {
         likeCountInt = likeCountInt + 1;
         userClicked = true;
