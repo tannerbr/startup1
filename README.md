@@ -54,6 +54,12 @@ my startup project will be a website that allows people to recommend their favor
 * Users not allowed to proceed past index.hmtl until they sign in or create an account
 * Database connected and Mongodb set up 
 
+### WHAT HAS BEEN DONE FOR WEBSOCKET DELIVERABLE
+* Listen for connections on back end
+* Display user is connected to WS on frontend 
+* WS connected and displays a message when users like the talk of the day 
+* 
+*  
 
 
 ## Images of my startup outline
