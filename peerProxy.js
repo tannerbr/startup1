@@ -19,7 +19,7 @@ function peerProxy(httpServer) {
   wss.on('connection', (ws) => {
     const connection = { id: uuid.v4(), alive: true, ws: ws };
     connections.push(connection);
-
+    //console.log(connections);
     // Forward messages to everyone except the sender
     ws.on('message', function message(data) {
       connections.forEach((c) => {
