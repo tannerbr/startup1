@@ -10,7 +10,9 @@ const likeButton = document.querySelector('#likeButton');
 var showLikeCount = document.getElementById('showLikeCount');
 var userName = localStorage.getItem('userName');
 var socket;
-//const userNameEl = document.querySelector('.user-name');
+var msgArray = [];
+const userNameEl = document.querySelector('.user-name');
+userNameEl.innerHTML = userName;
 
 
 // Event messages
@@ -44,6 +46,7 @@ function displayMsg(cls, from, msg) {
     const chatText = document.querySelector('#user-messages');
     chatText.innerHTML =
       `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+      
   }
 
 // when like button is hit

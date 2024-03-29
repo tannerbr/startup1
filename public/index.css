@@ -31,7 +31,7 @@ video {
     flex: auto;
     margin: auto;
     display: flex;
-    position: absolute;
+    position: fixed;
 }
 
 .logo {
@@ -109,6 +109,12 @@ video {
   
   .system-event {
     color: hsl(217, 75%, 15%);
+  }
+
+  .fixedContent {
+    width: auto;
+    height: auto;
+    position: fixed;
   }
 
   @keyframes float {
