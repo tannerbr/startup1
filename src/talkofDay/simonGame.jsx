@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button } from 'react-bootstrap';
-import { likeButton } from './likeButton';
+//import { likeButton } from './likeButton';
 import { delay } from './delay';
 import { likeEvent, likeNotifier } from './likeNotifier';
 import './simonGame.css';

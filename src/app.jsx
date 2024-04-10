@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-//import { Suggest } from './suggest/suggest';
+import { Talks } from './suggest/suggest';
 //import { Talks } from './allTalks/allTalks';
 import { talkofDay } from './talkofDay/talkofDay';
 import { AuthState } from './login/authState';
