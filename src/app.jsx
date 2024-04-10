@@ -3,7 +3,7 @@ import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
 import { Talks } from './suggest/suggest';
 //import { Talks } from './allTalks/allTalks';
-import { talkofDay } from './talkofDay/talkofDay';
+import { TalkofDay } from './talkofDay/talkofDay';
 import { AuthState } from './login/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
@@ -67,7 +67,7 @@ function App() {
           />
           <Route path='/suggest' element={<Login userName={userName} />} />
           { <Route path='/allTalks' element={<allTalks />} /> }
-          {<Route path='/talkofDay' element={<talkofDay />} />}
+          {<Route path='/talkofDay' element={<TalkofDay />} />}
           <Route path='*' element={<NotFound />} />
         </Routes>
 

@@ -73,7 +73,6 @@ async function clickFunc(event){
     localStorage.setItem('likeCountStored', likeCountInt);
     console.log(likeCountInt);
     broadcastEvent(userName, likeEvent);
-
 }
 
 likeButton.addEventListener('click', clickFunc); 

@@ -9,14 +9,14 @@ export function Users(props) {
   const [events, setEvent] = React.useState([]);
 
   React.useEffect(() => {
-    GameNotifier.addHandler(handleGameEvent);
+    likeNotifier.addHandler(handleLikeEvent);
 
     return () => {
-      GameNotifier.removeHandler(handleGameEvent);
+      likeNotifier.removeHandler(handleLikeEvent);
     };
   });
 
-  function handleGameEvent(event) {
+  function handleLikeEvent(event) {
     setEvent([...events, event]);
   }
 
