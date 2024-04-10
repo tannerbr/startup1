@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { Talks } from './suggest/suggest';
-//import { Talks } from './allTalks/allTalks';
+import { Suggest1 } from './suggest/suggest';
+//import { loadTalks } from './allTalks/talks';
 import { TalkofDay } from './talkofDay/talkofDay';
 import { AuthState } from './login/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,7 +37,7 @@ function App() {
               {authState === AuthState.Authenticated && (
                 <li className='nav-item'>
                   <NavLink className='nav-link' to='talks'>
-                    Talks
+                    All Talks
                   </NavLink>
                 </li>
               )}
@@ -65,8 +65,9 @@ function App() {
             }
             exact
           />
-          <Route path='/suggest' element={<Login userName={userName} />} />
-          { <Route path='/allTalks' element={<allTalks />} /> }
+          <Route path='/login' element={<Login userName={userName} />} />
+          { <Route path='/suggest' element={<Suggest1 />} /> }
+          { <Route path='/talks' element={<allTalks />} /> }
           {<Route path='/talkofDay' element={<TalkofDay />} />}
           <Route path='*' element={<NotFound />} />
         </Routes>
