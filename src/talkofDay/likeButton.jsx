@@ -9,10 +9,6 @@ export const SimonButton = React.forwardRef(({ position, onPressed }, ref) => {
   // the player must copy.
   React.useImperativeHandle(ref, () => ({
     async press(delayMs = 500) {
-      setLightOn(false);
-      if (playSound) {
-        sound.play();
-      }
       await delay(delayMs);
       setLightOn(true);
       await delay(100);

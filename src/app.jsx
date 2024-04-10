@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { Suggest } from './suggest/suggest';
-import { Talks } from './allTalks/allTalks';
-import { TalkofDay } from './talkofDay/talkofDay';
+//import { Suggest } from './suggest/suggest';
+//import { Talks } from './allTalks/allTalks';
+import { talkofDay } from './talkofDay/talkofDay';
 import { AuthState } from './login/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
@@ -65,9 +65,9 @@ function App() {
             }
             exact
           />
-          <Route path='/suggest' element={<Play userName={userName} />} />
-          <Route path='/talks' element={<Talks />} />
-          <Route path='/talkofDay' element={<TalkofDay />} />
+          <Route path='/suggest' element={<Login userName={userName} />} />
+          { <Route path='/allTalks' element={<allTalks />} /> }
+          {<Route path='/talkofDay' element={<talkofDay />} />}
           <Route path='*' element={<NotFound />} />
         </Routes>
 
@@ -81,7 +81,7 @@ function App() {
         </footer>
       </div>
     </BrowserRouter>
-  );
+   );
 }
 
 function NotFound() {

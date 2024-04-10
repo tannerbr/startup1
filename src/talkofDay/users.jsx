@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { talkEvent, talkNotifier } from './likeNotifier';
+import { likeEvent, likeNotifier } from './likeNotifier';
 import './users.css';
 
 export function Users(props) {

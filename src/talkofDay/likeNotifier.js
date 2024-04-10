@@ -20,18 +20,18 @@ class likeEventNotifier {
     const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
     this.socket = new WebSocket(`${protocol}://${window.location.hostname}:${port}/ws`);
     this.socket.onopen = (event) => {
-      this.receiveEvent(new EventMessage('Talk', GameEvent.System, { msg: 'connected' }));
+      this.receiveEvent(new EventMessage('Talk', likeEvent.System, { msg: 'connected' }));
     };
     this.socket.onclose = (event) => {
-      this.receiveEvent(new EventMessage('Talk', GameEvent.System, { msg: 'disconnected' }));
+      this.receiveEvent(new EventMessage('Talk', likeEvent.System, { msg: 'disconnected' }));
     };
     this.socket.onmessage = async (msg) => {
       try {
         const event = JSON.parse(await msg.data.text());
         this.receiveEvent(event);
       } catch {}
-      const msg = JSON.parse(await event.data.text()); // in right place?
-      displayMsg('user', msg.from, `liked this talk`);
+      const likeMsg = JSON.parse(await event.data.text()); // in right place?
+      displayMsg('user', likeMsg.from, `liked this talk`);
     };
   }
 

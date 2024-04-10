@@ -3,10 +3,10 @@ import React from 'react';
 import { Users } from './users';
 import { SimonGame } from './simonGame'; // what do I call here?
 
-export function Play(props) {
+export function talkofDay(props) {
   return (
     <main className='bg-secondary'>
-      <Players userName={props.userName} />
+      <Users userName={props.userName} />
       <SimonGame userName={props.userName} />
     </main>
   );

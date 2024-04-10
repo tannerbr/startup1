@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './allTalks.css';
+import './suggest.css';
 
 export function Talks() {
-  const [scores, setTalk] = React.useState([]);
+  const [talks, setTalk] = React.useState([]);
 
   // Demonstrates calling a service asynchronously so that
   // React can properly update state objects with the results.
@@ -24,8 +24,8 @@ export function Talks() {
 
   // Demonstrates rendering an array with React
   const talkRows = [];
-  if (talks.length) {
-    for (const [i, talk] of talks.entries()) {
+  if (Talks.length) {
+    for (const [i, talk] of talk.entries()) {
       talkRows.push(
         <tr key={i}>
           <td>{i}</td>
@@ -47,7 +47,7 @@ export function Talks() {
       <table className='table table-warning table-striped-columns'>
         <thead className='table-dark'>
           <tr>
-            <th>Title</th>
+            <th>Talk Title</th>
             <th>Link</th>
           </tr>
         </thead>

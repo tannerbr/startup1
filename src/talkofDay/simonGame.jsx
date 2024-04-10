@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Button } from 'react-bootstrap';
-import { SimonButton } from './likeButton';
+import { likeButton } from './likeButton';
 import { delay } from './delay';
-import { GameEvent, GameNotifier } from './likeNotifier';
+import { likeEvent, likeNotifier } from './likeNotifier';
 import './simonGame.css';
 
 export function SimonGame(props) {
@@ -146,7 +146,7 @@ export function SimonGame(props) {
         <>{buttonArray}</>
         <div className='controls center'>
           <div className='game-name'>
-            Simon<sup>&reg;</sup>
+            Startup<sup>&reg;</sup>
           </div>
           <div className='score center'>{sequence.length === 0 ? '--' : sequence.length - 1}</div>
           <Button variant='primary' onClick={() => reset()}>
