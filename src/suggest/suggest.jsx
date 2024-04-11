@@ -26,7 +26,7 @@ export function Suggest1(props) {
         <div>
           <h1>Welcome to the Suggest Page!</h1>
           <p>Enter the talk name and link into the space provided below</p>
-          <form method="get" action="javascript:saveTalk()">
+          <form method="get" action="javascript:saveTalk()"> 
             <input type="text" id="talks" placeholder="Talk name" />
             <br/>
             <br/>
