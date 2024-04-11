@@ -77,11 +77,14 @@ var secureApiRouter = express.Router();
 apiRouter.use(secureApiRouter);
 
 secureApiRouter.use(async (req, res, next) => {
+  console.log("in secure API")
   authToken = req.cookies[authCookieName];
   const user = await DB.getUserByToken(authToken);
   if (user) {
+    console.log("in if statement")
     next();
   } else {
+    console.log("in else statement")
     res.status(401).send({ msg: 'Unauthorized' });
   }
 });
