@@ -31,7 +31,7 @@ export function Talks() {
         <tr key={i}>
           <td>{i}</td>
           <td>{talk.talkTitle?.split('-')[0]}</td>
-          <td>{talk.talkLink}</td>
+          {/* <td>{talk.talkLink}</td> */}
         </tr>
       );
     }
@@ -47,6 +47,10 @@ export function Talks() {
     <main className='container-fluid bg-secondary text-center'>
       <table className='table table-warning table-striped-columns'>
         <thead className='table-dark'>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
           <tr>
             <th>Talk Title</th>
             <th>Link</th>

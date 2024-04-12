@@ -27,6 +27,10 @@ body {
     animation: float 3s ease-out infinite;
 }
 
+.showLikeCount {
+  position: center;
+}
+
 video {
     flex: auto;
     margin: auto;

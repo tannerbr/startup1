@@ -31,3 +31,7 @@
   color: rgb(221, 148, 40);
   margin: 0 0.25em;
 }
+
+.likeButton {
+  position: center;
+}
