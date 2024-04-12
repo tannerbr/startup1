@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+  }
+  
+  header {
+    flex: 0 80px;
+    background-color: hsl(217, 75%, 15%);
+  }
+  
+  main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .event {
+    color: rgb(50, 50, 50);
+  }
+  
+  .user-event {
+    color: rgb(165, 220, 235);
+  }
+
+  
+  .system-event {
+    color: hsl(217, 75%, 15%);
+  }
+
+  footer {
+    flex: 0 30px;
+  }
+
+video {
+    flex: auto;
+    margin: auto;
+    display: flex;
+    position: fixed;
+}
