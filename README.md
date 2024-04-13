@@ -58,8 +58,12 @@ my startup project will be a website that allows people to recommend their favor
 * Listen for connections on back end
 * Display user is connected to WS on frontend 
 * WS connected and displays a message when users like the talk of the day 
-* 
-*  
+
+### WHAT HAS BEEN DONE FOR REACT DELIVERABLE
+* Bundled with vite 
+* React components for the user liking a talk and for saving a talk in the all talks page
+* React router set up
+* React hooks used 
 
 
 ## Images of my startup outline
