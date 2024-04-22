@@ -267,27 +267,44 @@ Function	Meaning	Example
 
 ### NOTES FROM FINAL KAHOOT 
 * port 80 is reserved for? Answer: HTTP 
-* HTTP Status codes in the 300 range are for? Answer: conent redirects or caching
-* which is not a standard HTTP header? Answer: Language (host, cookie, and conent-type are valid)
-* cookies allow? Answer: a server to store data on the client
-* <img alt="pic8" src="./NotePics/finalPic1.jpg" ></img>
-* for the request [GET]/fav/george what is logged? Answer: paul ringo john
-* <img alt="pic8" src="./NotePics/finalPic2.jpg" ></img>
-* which express middleware will match this fetch request? Answer: app.delete(/fav\/(.*)/,() =>{})
-* <img alt="pic8" src="./NotePics/finalPic3.jpg" ></img>
-* what document matches this mongoDB query? Answer: { name: "Walke", score: -55 }
-* why is hashing passwords important? Answer: It improves security by making the password unreadable
-* <img alt="pic8" src="./NotePics/finalPic4.jpg" ></img>
-* give the following code what will console.log print? Answer: Client:Server:Hello
-* what value does WebSocket add to HTTP? Answer: It is peer to peer instead of client to server
-* what is not a purpose of JSX? Answer: To combine CSS, HTML, and JavaScript (can: To render HTML from JavaScript, To componentize your HTML, To allow for composability of your HTML)
-* <img alt="pic8" src="./NotePics/finalPic5.jpg" ></img>
-* what will component A intitially display? Answer: tacofish
-* <img alt="pic8" src="./NotePics/finalPic6.jpg" ></img>
-* what component will URL ' /burger' render? Answer: B
-* what does the command "NPM intall ws" not do? Answer: Adds template code for websockets to your JavaScript (it does: Locks the version of the websocket package for your application, Adds the websocket source code to the node_modules directory, Adds a dependency to your package.json file)
-* can you use fetch in front-end and back end code? Answer: True
-* which of the following is not true about linux daemon? Answer: Cannot fork other processes (is true: Executes independent of a user, Starts when the computer is rebooted, PM2 is an example of a daemon)
+* HTTP Status codes in the 300 range are for? 
+* Answer: conent redirects or caching
+* 
+* which is not a standard HTTP header? 
+* Answer: Language (host, cookie, and conent-type are valid)
+* 
+* cookies allow? 
+* Answer: a server to store data on the client
+* <img alt="pic1" src="./NotePics/finalPic1.jpg" ></img>
+* for the request [GET]/fav/george what is logged? 
+* Answer: paul ringo john
+* <img alt="pic2" src="./NotePics/finalPic2.jpg" ></img>
+* which express middleware will match this fetch request? 
+* Answer: app.delete(/fav\/(.*)/,() =>{})
+* <img alt="pic3" src="./NotePics/finalPic3.jpg" ></img>
+* what document matches this mongoDB query? 
+* Answer: { name: "Walke", score: -55 }
+* why is hashing passwords important? 
+* Answer: It improves security by making the password unreadable
+* <img alt="pic4" src="./NotePics/finalPic4.jpg" ></img>
+* give the following code what will console.log print? 
+* Answer: Client:Server:Hello
+* what value does WebSocket add to HTTP? 
+* Answer: It is peer to peer instead of client to server
+* what is not a purpose of JSX? 
+* Answer: To combine CSS, HTML, and JavaScript (can: To render HTML from JavaScript, To componentize your HTML, To allow for composability of your HTML)
+* <img alt="pic5" src="./NotePics/finalPic5.jpg" ></img>
+* what will component A intitially display? 
+* Answer: tacofish
+* <img alt="pic6" src="./NotePics/finalPic6.jpg" ></img>
+* what component will URL ' /burger' render? 
+* Answer: B
+* what does the command "NPM intall ws" not do? 
+* Answer: Adds template code for websockets to your JavaScript (it does: Locks the version of the websocket package for your application, Adds the websocket source code to the node_modules directory, Adds a dependency to your package.json file)
+* can you use fetch in front-end and back end code? 
+* Answer: True
+* which of the following is not true about linux daemon? 
+* Answer: Cannot fork other processes (is true: Executes independent of a user, Starts when the computer is rebooted, PM2 is an example of a daemon)
 *
 *
 *
