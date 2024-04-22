@@ -267,14 +267,17 @@ Function	Meaning	Example
 
 
 
-### NOTES FROM FINAL KAHOOT 
-* port 80 is reserved for? Answer: HTTP 
+
+
+
+### NOTES FROM FINAL KAHOOT
+* Which of the following is not true about a Linux daemon
+* Answer: Cannot fork other processes  
+* port 80 is reserved for? Answer: HTTP (Client (400) server (500))
 * HTTP Status codes in the 300 range are for? 
-* Answer: conent redirects or caching
-* 
+* Answer: conent redirects or caching (HTTPs 443 FTP SSH 80, 22)
 * which is not a standard HTTP header? 
-* Answer: Language (host, cookie, and conent-type are valid)
-* 
+* Answer: Language (host, cookie, and conent-type are valid)* 
 * cookies allow? 
 * Answer: a server to store data on the client
 * <img alt="pic1" src="./NotePics/finalPic1.jpg" ></img>
@@ -307,30 +310,7 @@ Function	Meaning	Example
 * Answer: True
 * which of the following is not true about linux daemon? 
 * Answer: Cannot fork other processes (is true: Executes independent of a user, Starts when the computer is rebooted, PM2 is an example of a daemon)
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
+
 
 
 
