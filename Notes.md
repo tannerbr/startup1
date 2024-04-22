@@ -265,6 +265,8 @@ Function	Meaning	Example
 
 * ANSWER: A D B
 
+
+
 ### NOTES FROM FINAL KAHOOT 
 * port 80 is reserved for? Answer: HTTP 
 * HTTP Status codes in the 300 range are for? 
